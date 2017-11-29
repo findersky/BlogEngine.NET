@@ -2,14 +2,14 @@
 <%@ Import Namespace="BlogEngine.Core" %>
 <div class="comment-form well-global">
     <div class="well-global-title clearfix">
-        <h3 class="pull-left" id="addcomment"><%=Resources.labels.addComment %></h3>
+        <h3 class="float-left" id="addcomment"><%=Resources.labels.addComment %></h3>
         <% if(BlogSettings.Instance.ShowLivePreview){ %>
-        <div id="commentMenu" class="btn-group pull-right comment-menu">
+        <div id="commentMenu" class="btn-group float-right comment-menu">
             <a class="btn-1 btn btn-default btn-sm active">
-                <span style="display: block; height: 100%;" id="compose" class="selected" onclick="return BlogEngine.composeComment()"><%=Resources.labels.comment%></span>
+                <span style="display: block; height: 100%;" id="compose" class="selected" onclick="return BlogEngine.composeComment()"><i class="icon-comment"></i></span>
             </a>
             <a class="btn-2 btn btn-default btn-sm">
-                <span style="display: block; height: 100%;" id="preview" onclick="return BlogEngine.showCommentPreview()"><%=Resources.labels.livePreview%></span>
+                <span style="display: block; height: 100%;" id="preview" onclick="return BlogEngine.showCommentPreview()"><i class="icon-eye"></i></span>
             </a>
         </div>
         <% } %>
@@ -39,7 +39,7 @@
         <div class="form-group" id="commentCompose">
             <label for="txtContent" class="col-md-2 control-label"><%=Resources.labels.comment%> *</label>
             <div class="col-md-10">
-                <textarea class="form-control" id="txtContent" cols="50" rows="6" name="txtContent"></textarea>
+                <textarea class="form-control" id="txtContent" cols="50" rows="4" name="txtContent"></textarea>
             </div>
         </div>
         <% if(BlogSettings.Instance.ShowLivePreview){ %>

@@ -2,6 +2,7 @@
     $scope.items = [];
     $scope.fltr = 'pages';
     $scope.filter = ($location.search()).fltr;
+    $scope.sortingOrder = 'SortOrder';
 
     $scope.load = function () {
         var url = '/api/pages';
@@ -24,8 +25,10 @@
 
     $scope.load();
 
-    $scope.processChecked = function (action) {
-        processChecked("/api/pages/processchecked/", action, $scope, dataService);
+    $scope.processChecked = function (action, itemsChecked) {
+        if (itemsChecked) {
+            processChecked("/api/pages/processchecked/", action, $scope, dataService);
+        }
     }
 
 	$scope.setFilter = function (filter) {

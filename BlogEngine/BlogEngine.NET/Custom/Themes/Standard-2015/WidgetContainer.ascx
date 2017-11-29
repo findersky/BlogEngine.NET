@@ -6,7 +6,7 @@
        { %>
     <h4 class="widget-header">
         <%= Widget.Title%>
-        <span class="pull-right"><%= AdminLinks %></span>
+        <span class="float-right"><%= AdminLinks %></span>
     </h4>
     <% } %>
     <div class="widget-content">

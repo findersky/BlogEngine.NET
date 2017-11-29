@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Web.UI.HtmlControls;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
-using BlogEngine.Core;
 
 namespace BlogEngine.Core.Web.Controls
 {
@@ -83,7 +81,7 @@ namespace BlogEngine.Core.Web.Controls
         {
             bool returnValue = false;
 
-            foreach (BlogEngine.Core.Page page in BlogEngine.Core.Page.Pages)
+            foreach (BlogEngine.Core.Page page in BlogEngine.Core.Page.Pages.OrderBy(page => page.SortOrder))
             {
                 if (page.ShowInList && page.IsPublished)
                 {
