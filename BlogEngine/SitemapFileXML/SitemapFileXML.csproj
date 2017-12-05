@@ -31,9 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BlogEngine.Core, Version=3.3.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BlogEngine.Core\bin\Release\BlogEngine.Core.dll</HintPath>
+    <Reference Include="BlogEngine.Core">
+      <HintPath>..\ref\BlogEngine.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
