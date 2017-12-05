@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BlogEngine.Core, Version=3.3.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BlogEngine.Core\bin\Release\BlogEngine.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -44,12 +48,6 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SitemapFileXML.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BlogEngine.Core\BlogEngine.Core.csproj">
-      <Project>{9ed9914a-fb6e-4d21-8c71-9122e8c3076b}</Project>
-      <Name>BlogEngine.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
