@@ -547,6 +547,7 @@
     <Content Include="Content\star-rating.css" />
     <Content Include="Content\toastr.css" />
     <Content Include="Content\toastr.min.css" />
+    <Content Include="CreateGUIDsOnline.aspx" />
     <Content Include="Custom\Controls\Defaults\CommentView.ascx" />
     <Content Include="Custom\Controls\Defaults\PostView.ascx" />
     <Content Include="Custom\Media\sample.flv" />
@@ -1960,6 +1961,13 @@
     <Compile Include="AppCode\Controls\WidgetZone.cs" />
     <Compile Include="AppCode\PersianCulture.cs" />
     <Compile Include="AppCode\App_Start\BlogEngineConfig.cs" />
+    <Compile Include="CreateGUIDsOnline.aspx.cs">
+      <DependentUpon>CreateGUIDsOnline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateGUIDsOnline.aspx.designer.cs">
+      <DependentUpon>CreateGUIDsOnline.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Custom\Extensions\AkismetFilter.cs" />
     <Compile Include="Custom\Extensions\BBCode.cs" />
     <Compile Include="Custom\Extensions\BreakPost.cs" />
@@ -2471,7 +2479,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>64079</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
